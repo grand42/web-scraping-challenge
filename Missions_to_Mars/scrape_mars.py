@@ -42,6 +42,7 @@ def scrape():
     tables = pd.read_html(mars_facts_url)
     MarsFacts = tables[0]
     MarsFacts.columns= ["Category", "Value"]
+    MarsFacts.set_index('Category')
     MarsFacts_html = MarsFacts.to_html()
 
     ## Mars Hemispheres ##
