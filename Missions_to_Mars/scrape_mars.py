@@ -85,7 +85,7 @@ def scrape():
         mars_dict = {"news_title":mars_news_title,
             "news_paragraph":mars_news_p,
             "featured_image_url":featured_image_url,
-            "fact_table": str(MarsFacts_html)
+            "fact_table": str(MarsFacts_html),
             "hemisphere_images":hemisphere_images
         }
     return mars_dict
