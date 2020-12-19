@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission to Mars</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+  
+      <div class="jumbotron text-center">
+        <h1>Mission to Mars</h1>
+        <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Blast Off!</a></p>
+      </div>
+  
+      <!-- Mars Facts -->
+      <div class="row">
+        <div class="col-md-6">
+            <h2>Mars Featured Image</h2>
+        <img src = "{{mars.featured_image_url}}" alt="Mars Featured Image">
+        <div class="col-md-6">
+            <h2>Mars Facts</h2>
+            {{mars.fact_table|safe}}
+        </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="heading">Mars Latest News</h2>
+          </div>
+        </div>
+      <div class="row"></div>
+      <div class="row">
+        <div class="col-md-12">
+            <h4>{{mars.news_title}}</h4>
+            <p>{{mars.news_paragraph}}</p>
+      </div>
+      </div>
+      <div class="row">
+          <div class="col-md-8">
+          <h2 class = "align-center">Mars Hemispheres</h2>
+      
+    </div>
+</div>
+
+  </body>
+  
+  </html>
