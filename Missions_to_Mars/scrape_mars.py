@@ -74,7 +74,7 @@ def scrape():
         
         # Create Dictionary
         image_dict={}
-        image_dict['Title']=Title
+        image_dict['title']=Title
         image_dict['img_url']=High_res
         
         hemisphere_images.append(image_dict)

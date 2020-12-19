@@ -20,43 +20,49 @@
   
       <!-- Mars Facts -->
       <div class="row">
-        <div class="col-md-6">
-            <h2>Mars Featured Image</h2>
-        <img src = "{{mars.featured_image_url}}" alt="Mars Featured Image">
-        <div class="col-md-6">
-            <h2>Mars Facts</h2>
-            {{mars.fact_table|safe}}
-        </div>
-        </div>
-      </div>
-      <div class="row">
         <div class="col-md-12">
-          <h2 class="heading">Mars Latest News</h2>
-          </div>
+          <h2 class="text-left">Mars Latest News</h2>
         </div>
-      <div class="row"></div>
-      <div class="row">
-        <div class="col-md-12">
-            <h4>{{mars.news_title}}</h4>
-            <p>{{mars.news_paragraph}}</p>
       </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-12">
+          <h4>{{mars.news_title}}</h4>
+          <p>{{mars.news_paragraph}}</p>
       </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-lg-8-md-12">
+          <h2 class = "text-left">Mars Featured Image</h2>
+          <hr>
+        <img src = "{{mars.featured_image_url}}" alt="Mars Featured Image" width="600" height="400">
+      </div>
+      <div class = "col-lg-1"></div>
+      <div class="col-lg-3-md-12">
+          <h2 class="text-left">Mars Facts</h2>
+          <hr>
+          {{mars.fact_table|safe}}
+      </div>
+    </div>
+    <div class="row"></div>
+    <br>
       <div class="row">
-          <div class="col-md-8">
-          <h2 class = "align-center">Mars Hemispheres</h2>
+          <div class="col-md-12">
+            <h2 class = "text-left">Mars Hemispheres</h2>
+            <hr>
           </div>
-          <div class="row">       
+        </div> 
+      <div class="row">       
             {% for hemisphere in mars.hemisphere_images %} 
-              <div class="col-6 border">
+              <div class="col-lg-6-md-12 border">
               </br>
-                    <div>
-                      <img width="512 px" height="512 px" src="{{ hemisphere.img_url | safe }}">
+              <div>
+                      <h4 class="text-center"> {{ hemisphere.title | safe }} </h4>  
                     </div>
-
                     <div>
-                      <h4> {{ hemisphere.Title | safe }} </h4>  
+                      <img width="500 px" height="500 px" src="{{ hemisphere.img_url | safe }}">
                     </div>
-            
               </div>
             {% endfor %}
     </div> 
@@ -64,6 +70,6 @@
     </div>
 </div>
 
-  </body>
-  
-  </html>
+</body>
+
+</html>
