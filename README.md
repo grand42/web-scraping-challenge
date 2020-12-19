@@ -40,5 +40,5 @@ Using MongoDB with Flask templating, a new HTML page was created that displays a
 
 -A template was created called [index.html](index.html) that calls the information from the flask dictionary and displays the data using Bootstrap elements. The final results are displayed as follows:
 
-![Screenshot1](Screenshots/Mission_to_Mars_Screenshot.png)
-![Screenshot2](Screenshots/Hemispheres_Screenshot.png)
+![Screenshot1](Missions_to_Mars/Screenshots/Mission_to_Mars_Screenshot.png)
+![Screenshot2](Missions_to_Mars/Screenshots/Hemispheres_Screenshot.png)
